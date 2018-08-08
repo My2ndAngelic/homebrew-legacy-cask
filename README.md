@@ -1,17 +1,17 @@
-# homebrew-cask-versions
+# homebrew-cask-legacy
 
 Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/Homebrew/homebrew-cask)
-project.
+project. 
 
 # Usage
 
 After you install homebrew-cask, run the following command:
 
 ```sh
-$ brew tap homebrew/cask-versions
+$ brew tap My2ndAngelic/cask-legacy
 ```
 
-You can now install alternate versions of Casks.
+Installing a cask is easy
 
 ```sh
 $ brew cask install iterm2-beta
@@ -19,18 +19,19 @@ $ brew cask install iterm2-beta
 
 ## Acceptable Casks
 
-`homebrew/cask-versions` is not intended to be used for all and any old versions you personally require for xyz project; casks submitted here should be expected to be used by a reasonable number of people and supported by contributors long-term.
+`My2ndAngelic/homebrew-cask-legacy` is only used to install legacy cask for old macOS version. The current support is from Mavericks and earlier. Please ensure that you have the latest version of you major macOS release
 
 You may wish to consider hosting your own [tap](https://github.com/Homebrew/brew/blob/master/docs/How-to-Create-and-Maintain-a-Tap.md) for casks you wish to personally support that do not meet the above standards.
 
-For this repo, rules are (following our [nomenclature](https://github.com/Homebrew/homebrew-cask/blob/master/doc/development/adding_a_cask.md#finding-a-home-for-your-cask)):
+For this repo, rules are (following our [nomenclature](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/doc/development/adding_a_cask.md#finding-a-home-for-your-cask)):
 
-+ Include the latest minor version of legacy versions of commercial and freemium software.
-+ Legacy versions of commercial and freemium software are restricted to a maximum of five casks.
-+ Include beta, development, unstable, nightly, early access program, ….
-+ Refuse legacy versions of gratis or open-source software, unless there is a clear demonstrable need for them.
-+ Legacy versions of gratis or open-source software that were accepted should be removed after one year.
-+ Include casks that do not fit the rules, but need to exist somewhere since they are required by other casks.
++ Legacy version only
++ Only support Mavericks and earlier.
++ Please consider contribute new version to [homebrew-cask](https://github.com/Homebrew/homebrew-cask) or [homebrew-cask-version](https://github.com/Homebrew/homebrew-cask-version)
 
 ## License
-Code is under the [BSD 2 Clause (NetBSD) license](https://github.com/Homebrew/homebrew-cask-versions/blob/master/LICENSE)
+Homebrew's original code is under the [BSD 2 Clause (NetBSD) license](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-ORIGINAL)
+
+My own code in under [WTFPL](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-MODIFIED)
+
+Clarification: Do what you want with my rewrite. If you want to get the parts done by Homebrew then please use their license.
