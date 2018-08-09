@@ -33,6 +33,6 @@ For this repo, rules are (following our [nomenclature](https://github.com/My2ndA
 ## License
 Homebrew's original code is under the [BSD 2 Clause (NetBSD) license](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-ORIGINAL)
 
-Our own code in under [WTFPL](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-MODIFIED)
+Our own code in under [WPL](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-MODIFIED)
 
 Clarification: Do what you want with our code. If you use their code add BSD 2 Clause (NetBSD) license to your fork as well.
