@@ -4,12 +4,12 @@ cask 'google-chrome-legacy' do
     sha256 '69c416f9ee5cb60ffd91baad3db567cbc98da9f58cb5348f0ef927820a6020c9'
     url 'https://dl.google.com/dl/chrome/mac/legacy/GGRO/googlechrome.dmg'
   elsif MacOS.version == :mavericks
-    version '65.0.3325.181s'
+    version '65.0.3325.181'
     sha256 '60f5d8e2d7d80f8170c85e247c319b7cfd58b740c389483a5eceae3969b1a3be'
     url 'https://dl.google.com/dl/chrome/mac/legacy10_9/GGRO/googlechrome.dmg'
   else
-    version '68.0.3440.84'
-    sha256 'c61bf8dcf737cf32f64bac9547f0ffff5ce5b6d0fc7c828e7e75fead60b0a6d6'
+    version '68.0.3440.106'
+    sha256 'a569a574c0a9c1c2703476e29d1344b3098715293737c2948d165819b16a8fad'
     url 'https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg'
     appcast 'https://omahaproxy.appspot.com/history?os=mac;channel=stable'
   end
