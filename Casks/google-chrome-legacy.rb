@@ -1,5 +1,5 @@
-cask 'google-chrome' do
-  if MacOS.version <= :mavericks 
+cask 'google-chrome-legacy' do
+  if MacOS.version <= :mountain_lion
     version '49.0.2623.112'
     sha256 '69c416f9ee5cb60ffd91baad3db567cbc98da9f58cb5348f0ef927820a6020c9'
     url 'https://dl.google.com/dl/chrome/mac/legacy/GGRO/googlechrome.dmg'
