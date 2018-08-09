@@ -1,5 +1,5 @@
 # homebrew-cask-legacy
-[![Build Status](https://travis-ci.org/My2ndAngelic/homebrew-cask-legacy.svg?branch=master)](https://travis-ci.org/My2ndAngelic/homebrew-cask-legacy)
+[![Build Status](https://travis-ci.com/My2ndAngelic/homebrew-cask-legacy.svg?branch=master)](https://travis-ci.com/My2ndAngelic/homebrew-cask-legacy)
 
 Here you'll find alternate versions of Casks for the [homebrew-cask](https://github.com/Homebrew/homebrew-cask)
 project. 
