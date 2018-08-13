@@ -1,33 +1,7 @@
-cask 'mactex-legacy' do
-  # Bodging method, bypassed security checks
-  def extension(*vars)
-    puts vars
-  end
-
-  def filename(*vars)
-    puts vars
-  end
-
-  if MacOS.version <= :tiger # Never tested with Tiger
-    extension = 'mpkg'
-    version '2010.0907'
-    filename = "MacTeX-#{version.major}.#{extension}"
-    sha256 '9021e3cf9ad5965a53effeafc160b223101076bdbadb254dc6fa42fce4a2d1ab'
-    url "ftp://ftp.tug.org/historic/systems/mactex/#{version.major}/mactex#{version.no_dots}.zip"
-  elsif MacOS.version <= :mavericks
-    extension = 'pkg'
-    version '2016.1009'
-    filename = "mactex-#{version.no_dots}.#{extension}"
-    sha256 'b44873d445881900401d0e0eddccc78140b9ed51b538364889eb8529350d5bd7'
-    url "ftp://ftp.tug.org/historic/systems/mactex/2016/mactex-#{version.no_dots}.pkg"
-  else
-    extension = 'pkg'
-    version '2018.0417'
-    filename = "mactex-#{version.no_dots}.#{extension}"
-    sha256 'e6ee8f69ca6e5ca5d20a31afc3dff3b4e5aa7a0b1b89ace9864ac22b10c34b98'
-    # mirror.ctan.org/systems/mac/mactex was verified as official when first introduced to the cask
-    url "http://mirror.ctan.org/systems/mac/mactex/mactex-#{version.no_dots}.pkg"
-  end
+cask 'mactex2016' do
+  version '2016.1009'
+  sha256 'b44873d445881900401d0e0eddccc78140b9ed51b538364889eb8529350d5bd7'
+  url "ftp://ftp.tug.org/historic/systems/mactex/#{version.major}/mactex-#{version.no_dots}.pkg"
 
   # Original code
   # License: BSD Clause 2 (NetBSD)
@@ -40,7 +14,8 @@ cask 'mactex-legacy' do
                          'mactex-no-gui',
                        ]
 
-  pkg filename.to_s,
+  depends_on macos: '>= :leopard'
+  pkg "mactex-#{version.no_dots}.pkg",
       choices: [
                  {
                    # TeXLive
