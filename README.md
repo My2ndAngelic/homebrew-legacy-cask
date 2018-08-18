@@ -5,8 +5,16 @@ Here you'll find another alternate versions of Casks for the [homebrew-cask](htt
 project. 
 
 ## Noticeboard
->Currently I am the only maintainer to this project. There is go guarantee that this tap will not collide or conflict with [homebrew-cask](https://github.com/Homebrew/homebrew-cask) or [homebrew-cask-legacy](https://github.com/Homebrew/homebrew-cask-legacy). I will try to clean up all the files and rewrite all the documents if I have time. Sorry if there is some copyright infringement files left like some README.md or some guides leftover from main homebrew. I will try to clean those as well.
+> Currently I am the only maintainer to this project. There is go guarantee that this tap will not collide or conflict with [homebrew-cask](https://github.com/Homebrew/homebrew-cask) or [homebrew-cask-legacy](https://github.com/Homebrew/homebrew-cask-legacy). I will try to clean up all the files and rewrite all the documents if I have time. Sorry if there is some copyright infringement files left like some README.md or some guides leftover from main homebrew. I will try to clean those as well.
 > 
+> Check if you can install homebrew in the first place from GitHub. From what I have tested, there seems to be a problem with setting up Homebrew as GitHub has switched to TLS 1.2, which makes thing harder for old OS. From Mountain Lion and before, they will not support that protocol. Please open an issue/pull request if you found any workaround to:
+> - Install Homebrew and accessing GitHub
+> - Tap Homebrew/Cask
+> - Install a cask
+> - Update Homebrew
+>
+> I tested it with on VM, I have not tested it on real hardware yet.
+>
 > Please refer to the FAQ if you have more questions about this.
 >
 > *My2ndAngelic*
