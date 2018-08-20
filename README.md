@@ -7,15 +7,11 @@ project.
 ## Noticeboard
 > Currently I am the only maintainer to this project. There is go guarantee that this tap will not collide or conflict with [homebrew-cask](https://github.com/Homebrew/homebrew-cask) or [homebrew-cask-legacy](https://github.com/Homebrew/homebrew-cask-legacy). I will try to clean up all the files and rewrite all the documents if I have time. Sorry if there is some copyright infringement files left like some README.md or some guides leftover from main homebrew. I will try to clean those as well.
 > 
-> Check if you can install homebrew in the first place from GitHub. From what I have tested, there seems to be a problem with setting up Homebrew as GitHub has switched to TLS 1.2, which makes thing harder for old OS. From Mountain Lion and before, they will not support that protocol. Please open an issue/pull request if you found any workaround to:
-> - Install Homebrew and accessing GitHub
-> - Tap Homebrew/Cask
-> - Install a cask
-> - Update Homebrew
+> I have tested installing Homebrew core by git on Mountain Lion, Lion and Snow Leopard. This is a huge problem since GitHub has switched to TLS v1.2, and only Mavericks and above support this. I will try to move this project to another place as soon as I can ensure that it would run on Mountain Lion and older. I have tested installing Homebrew core by git on Mountain Lion, Lion and Snow Leopard. This is a huge problem since GitHub has switched to TLS v1.2, and only Mavericks and above support this. I will try to move this project to another place as soon as I can ensure that it would run on Mountain Lion and older. 
 >
-> I tested it with on VM, I have not tested it on real hardware yet.
->
-> Please refer to the FAQ if you have more questions about this.
+> The naming scheme of each cask will NOT be consistent for now. 
+> 
+> Please refer to the [FAQ.md](/FAQ.md) if you have more questions. 
 >
 > *My2ndAngelic*
 
@@ -42,8 +38,9 @@ For this repo, rules are (following our [nomenclature](https://github.com/My2ndA
 + Legacy version only
 + Only support Yosemite and earlier (more to come when Apple discontinues supporting old macOS version)
 + Please consider contribute new version to [homebrew-cask](https://github.com/Homebrew/homebrew-cask) or [homebrew-cask-version](https://github.com/Homebrew/homebrew-cask-version)
++ To avoid conflict with homebrew-cask and homebrew-cask-versions, we have to perform a manual check to ensure that your cask name is not the same as those two taps. 
 
 ## License
-Homebrew's original code is under the [BSD 2 Clause (NetBSD) license](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-ORIGINAL)
+Homebrew's original code is under [BSD 2 Clause (NetBSD) license](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-ORIGINAL)
 
-Our own code is under [WPL](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-MODIFIED).
+This project is under [Do What You Want Public License](https://github.com/My2ndAngelic/homebrew-cask-legacy/blob/master/LICENSE-MODIFIED).
