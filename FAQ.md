@@ -8,11 +8,16 @@ This is a Homebrew tap aims at installing Cask for older macOS version, when App
 ### Why does this exist?
 Since Homebrew does not really support "legacy" formulas, the rule also applies for casks. They do, but on some special occasions and [will be removed after one year](https://github.com/Homebrew/homebrew-cask-versions/blob/master/README.md#acceptable-casks). I have a MBP running Mavericks, that's why I created this tap to maintain my own cask.
 
+### Does this compatible with my version of macOS?
+If you are using Mountain Lion and before, I am not sure about that. If you can install Homebrew and set cURL up to work properly, you would be OK. Otherwise, I do not know. Homebrew and Bintray have switched to TLS v1.2 and it is not compatible with macOS 10.8.5 or earlier.
+
+If you can find a work around for Homebrew, you can tap this and install what you want. Otherwise please upgrade to macOS Mavericks in the meantime.
+
 ### Are there any endorsements?
 There should be nothing since Homebrew also does not encourage users to run an unsupported macOS version. You can call them OS X/Mac OS if you so wish.
 
 ### Why are there two licenses?
-Since Homebrew uses BSD Clause 2 license and I also use parts of their source code to run (example: Travis CI check template), I will keep that in [LICENSE-ORIGINAL](./LICENSE-ORIGINAL). All of my own code, as stated in [LICENSE-MODIFIED](./LICENSE-MODIFIED), you can do whatever you want. That is why I uses WTFPL.
+Since Homebrew uses BSD Clause 2 license and I also use parts of their source code to run (ex: Travis CI check template), I will keep that in [LICENSE-NetBSD](./LICENSE-NetBSD). All of my own code, as stated in [LICENSE-WTFPL](./LICENSE-WTFPL), you can do whatever you want. That is why I uses WTFPL.
 
 ### Which one are under NetBSD license?
 All files that you can find in [homebrew-cask-versions](https://github.com/Homebrew/homebrew-cask-versions) are under NetBSD.
@@ -24,7 +29,7 @@ All files that you can find in [homebrew-cask-versions](https://github.com/Homeb
 * .gitignore and other .github templates
 * Some casks (written inside)
 
-If I forgot to add license to some cask, please open a pull request or an issue to notify me.
+If I forgot to add license to some casks, please open a pull request or an issue to notify me.
 
 ### Who are maintaining this?
 Currently: [My2ndAngelic](https://github.com/My2ndAngelic). 
